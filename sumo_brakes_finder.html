@@ -563,7 +563,7 @@ function renderResults(results) {
       <div class="card-header">
         <span class="badge-marca">${r.marca}</span>
         ${r.tipo ? `<span class="badge-tipo">${r.tipo}</span>` : ''}
-        <span class="card-modelo">${r.modelo}</span>
+        <span class="card-modelo">${r.modelo}${r.posicion ? ` <span style="color:var(--muted);font-weight:400;font-size:13px;">(${r.posicion})</span>` : ''}</span>
         ${r.anios ? `<span class="badge-anio">📅 ${r.anios}</span>` : ''}
       </div>
       <div class="card-body">
