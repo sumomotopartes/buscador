@@ -7,8 +7,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --red: #E01020;
-    --red-dark: #b00c1a;
+    --red: #F07020;
+    --red-dark: #c85a10;
     --black: #0a0a0a;
     --dark: #111318;
     --panel: #1a1d24;
@@ -62,14 +62,14 @@
 
   /* ERROR BANNER */
   .error-banner {
-    background: #2a0a0a; border: 1px solid #6b1a1a;
+    background: #1f1200; border: 1px solid #7a3a00;
     border-radius: 8px; padding: 16px 20px;
     margin-bottom: 20px; display: none;
   }
   .error-banner.visible { display: block; }
-  .error-banner h3 { color: #ff6b6b; font-size: 15px; margin-bottom: 6px; }
+  .error-banner h3 { color: #ff9944; font-size: 15px; margin-bottom: 6px; }
   .error-banner p { font-size: 13px; color: var(--muted); line-height: 1.5; }
-  .error-banner code { background: #1a0808; padding: 2px 6px; border-radius: 3px; font-size: 12px; color: #ff9999; }
+  .error-banner code { background: #1a0e00; padding: 2px 6px; border-radius: 3px; font-size: 12px; color: #ffbb77; }
 
   /* TABS */
   .region-tabs {
@@ -210,11 +210,8 @@
 </div>
 
 <div class="header">
-  <div class="header-icon">🏍️</div>
-  <div>
-    <h1>SUMO <span>Brakes</span> Finder</h1>
-    <p>Buscador de pastillas y discos de freno para motos</p>
-  </div>
+  <img src="https://dcdn-us.mitiendanube.com/stores/004/626/921/themes/common/logo-67870388553022573-1772138495-c68933543671e84a6d489c749067f6501772138495-640-0.webp" alt="SUMO Brakes Logo" style="height:64px;width:auto;object-fit:contain;">
+  <p style="font-size:13px;color:var(--muted);margin-left:4px;">Buscador de pastillas y discos de freno</p>
 </div>
 
 <div class="container">
@@ -265,7 +262,7 @@
         </select>
       </div>
       <div class="filter-group">
-        <label>Año</label>
+        <label>Rango de Años</label>
         <select id="sel-anio" disabled>
           <option value="">— Todos —</option>
         </select>
