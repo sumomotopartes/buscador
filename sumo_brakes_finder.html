@@ -570,7 +570,7 @@ function renderResults(results) {
         <span class="badge-marca">${r.marca}</span>
         ${r.tipo ? `<span class="badge-tipo">${r.tipo}</span>` : ''}
         <span class="card-modelo">${r.modelo}${r.posicion ? ` <span style="color:var(--muted);font-weight:400;font-size:13px;">(${r.posicion})</span>` : ''}</span>
-        ${r.anios ? `<span class="badge-anio">📅 <span style="color:var(--muted);font-size:11px;font-weight:400;">(Rango de Años)</span> ${r.anios}</span>` : ''}
+        ${r.anios ? `<span style="display:flex;align-items:center;gap:6px;"><span style="color:var(--muted);font-size:11px;font-weight:400;">(Rango de Años)</span><span class="badge-anio">📅 ${r.anios}</span></span>` : ''}
       </div>
       <div class="card-body">
         ${partsHtml || '<div style="color:var(--muted);font-size:13px">Sin códigos disponibles</div>'}
